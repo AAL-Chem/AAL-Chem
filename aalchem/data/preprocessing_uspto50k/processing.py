@@ -2,6 +2,9 @@
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import rdChemReactions
+from rdkit import RDLogger
+RDLogger.DisableLog('rdApp.*')
+RDLogger.DisableLog('rdApp.info')
 import rxn_insight as ri
 import pandas
 import argparse

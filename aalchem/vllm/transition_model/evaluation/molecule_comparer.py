@@ -2,6 +2,9 @@ from rdkit import Chem
 from rdkit.Chem import inchi
 from collections import Counter
 from typing import List, Dict
+from rdkit import RDLogger
+RDLogger.DisableLog('rdApp.*')
+RDLogger.DisableLog('rdApp.info')
 
 
 class MoleculeComparer:

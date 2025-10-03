@@ -5,6 +5,9 @@ from rdkit import Chem
 from aalchem.vllm.transition_model.evaluation.molecule_comparer import MoleculeComparer
 from typing import List, Dict, Optional
 from dataclasses import dataclass
+from rdkit import RDLogger
+RDLogger.DisableLog('rdApp.*')
+RDLogger.DisableLog('rdApp.info')
 
 
 # pip install rdkit

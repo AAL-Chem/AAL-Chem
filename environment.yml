@@ -1,4 +1,4 @@
-name: retro_llm
+name: retrollm
 channels:
   - conda-forge
   - defaults
