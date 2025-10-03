@@ -1,0 +1,19 @@
+{
+  "product": "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](-[c:15]2[n:16][c:17]([CH2:18][NH:19][CH:20]3[CH2:21][CH2:22][O:23][CH2:24][CH2:25]3)[c:26]([F:27])[cH:28][cH:29]2)[cH:30][cH:31]1",
+  "reaction_analysis": [
+    {
+      "forward_reaction_name": "Reductive amination with aldehyde",
+      "reactant_permutations": [
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](-[c:15]2[n:16][c:17]([CH:18]=O)[c:26]([F:27])[cH:28][cH:29]2)[cH:30][cH:31]1",
+            "[NH2:19][CH:20]1[CH2:21][CH2:22][O:23][CH2:24][CH2:25]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a standard and highly plausible reductive amination. The aldehyde and primary amine reactants are stable. The reaction is chemoselective as the aldehyde is the most electrophilic carbonyl and the primary amine is the most nucleophilic nitrogen. Other functional groups (amides, imidazole) are unreactive under these conditions. The transformation is stereochemically consistent, preserving the existing stereocenter at C:4 and any stereochemistry at C:20."
+        }
+      ]
+    }
+  ]
+}

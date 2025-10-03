@@ -1,0 +1,21 @@
+{
+  "name": "RedHatAI_DeepSeek-R1-0528-quantized_w4a16",
+  "description": "Experiment using RedHatAI_DeepSeek-R1-0528-quantized_w4a16 model for various reasoning tasks",
+  "vllm_config": {
+    "model_name": "data/models/RedHatAI_DeepSeek-R1-0528-quantized_w4a16",
+    "server_url": "http://localhost:8055/v1/chat/completions"
+  },
+  "task_config": {
+    "task_name": "retrosynthesis_transition",
+    "test_data_path": "data/processed/uspto50k_graphretro/final/subsamples/uspto50k_graphretro_canonicalized_test_atom_and_bond_changes_final_n_5_balanced_subsample.csv",
+    "trainings_data_reaction_examples_path": "data/evaluation/uspto_50k_graphretro_fixed_atom_mapping_plus_subsample/uspto_50k_graphretro_fixed_atom_mapping_plus_subsample_fixed/classes_subsamples/final/training_dataset_subsamples/uspto50k_graphretro_canonicalized_TRAIN_atom_and_bond_changes_final_subsample_5_examples_per_reaction_name.csv",
+    "output_dir": "run/results/transition_model/RedHatAI_DeepSeek-R1-0528-quantized_w4a16/current_run/splitted",
+    "prompt_template_path": "data/prompts/transition_model/final_transition_14_8.md"
+  },
+  "client_config": {
+    "request_timeout": 6000,
+    "retry_delay": 10,
+    "max_retries": 1,
+    "max_concurrent_requests": 50
+  }
+}

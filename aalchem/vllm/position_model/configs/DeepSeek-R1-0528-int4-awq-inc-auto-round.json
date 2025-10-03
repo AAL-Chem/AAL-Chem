@@ -1,0 +1,20 @@
+{
+  "name": "DeepSeek-R1-0528-int4-awq-inc-auto-round_experiment",
+  "description": "Experiment using DeepSeek-R1-0528-int4-awq-inc-auto-round model for various reasoning tasks",
+  "vllm_config": {
+    "model_name": "data/models/DeepSeek-R1-0528-int4-awq-inc-auto-round",
+    "server_url": "http://localhost:8033/v1/chat/completions"
+  },
+  "task_config": {
+    "task_name": "retrosynthesis_position",
+    "data_path": "data/processed/uspto50k_graphretro/final/subsamples/uspto50k_graphretro_canonicalized_test_atom_and_bond_changes_final_n_5_balanced_subsample.csv",
+    "output_dir": "run/results/DeepSeek-R1-0528-int4-awq-inc-auto-round/current_run/splitted",
+    "prompt_template_path":  "data/prompts/position_model/final_position_prompt_6_8_2025_final.md"
+  },
+  "client_config": {
+    "request_timeout": 6000,
+    "retry_delay": 10,
+    "max_retries": 2,
+    "max_concurrent_requests": 40
+  }
+}

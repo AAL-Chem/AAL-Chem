@@ -1,0 +1,187 @@
+{
+  "disconnections": [
+    {
+      "disconnection": "C:15 C:16",
+      "reactions": [
+        {
+          "forwardReaction": "Suzuki coupling with boronic acids",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 4,
+          "Priority": 1,
+          "rationale": "Identified via Inter-Fragment Analysis (C). This is a highly strategic and convergent disconnection of the central biaryl bond, breaking the molecule into two large, more manageable fragments (goal a, c). The Suzuki reaction is robust and high-yielding, making it a practical choice (goal b, d)."
+        },
+        {
+          "forwardReaction": "Stille reaction_aryl",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 4,
+          "Priority": 2,
+          "rationale": "Identified via Inter-Fragment Analysis (C). A powerful and convergent disconnection of the key biaryl linkage, simplifying the structure into two main precursors (goal a, c). While reliable, the use of organotin reagents raises toxicity and purification concerns compared to Suzuki coupling (goal d)."
+        },
+        {
+          "forwardReaction": "Negishi coupling",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 4,
+          "Priority": 3,
+          "rationale": "Identified via Inter-Fragment Analysis (C). This convergent disconnection splits the molecule at the biaryl bond, significantly simplifying the target (goal a, c). The required organozinc reagents can be sensitive, potentially affecting the reaction's practicality and robustness (goal b, d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:17 C:18",
+      "reactions": [
+        {
+          "forwardReaction": "Benzimidazole formation from aldehyde",
+          "isInOntology": true,
+          "forwardReactionClass": "Aromatic Heterocycle Formation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 4,
+          "rationale": "Identified via Strategic Bond Analysis (D) and Multi-Component Analysis (J). This disconnection constructs the core benzimidazole heterocycle from a substituted o-phenylenediamine and an aldehyde, which is a classic and efficient strategy for building this key scaffold (goal c)."
+        },
+        {
+          "forwardReaction": "Benzimidazole formation from ester/carboxylic acid",
+          "isInOntology": true,
+          "forwardReactionClass": "Aromatic Heterocycle Formation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 5,
+          "rationale": "Identified via Strategic Bond Analysis (D) and Multi-Component Analysis (J). An alternative to using an aldehyde, this strategy forms the benzimidazole core from a carboxylic acid derivative. This offers flexibility in starting material choice and reaction conditions for this crucial ring-forming step (goal c, d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:2 C:7",
+      "reactions": [
+        {
+          "forwardReaction": "Hydantoin synthesis from amino acid",
+          "isInOntology": false,
+          "forwardReactionClass": "Aromatic Heterocycle Formation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 16,
+          "rationale": "Identified via Multi-Component Analysis (J). This represents a powerful, convergent disconnection of the hydantoin ring itself. A common forward strategy involves reacting an N-substituted amino acid with an isocyanate, efficiently constructing the heterocyclic core in a single cyclization step (goal c)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:10 C:11",
+      "reactions": [
+        {
+          "forwardReaction": "N-alkylation of secondary amines with alkyl halides",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 3,
+          "Priority": 6,
+          "rationale": "Identified via Inter-Fragment Analysis (C). Disconnects the entire benzyl moiety from the hydantoin N-atom. This is a reliable C-N bond formation leading to a simpler hydantoin core and a substituted benzyl halide, simplifying the overall structure (goal a, b)."
+        },
+        {
+          "forwardReaction": "Reductive amination with aldehyde",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 7,
+          "rationale": "Identified via Inter-Fragment Analysis (C). An alternative strategy for attaching the benzyl group to the hydantoin nitrogen. This robust reaction uses an aldehyde precursor, which can offer advantages in stability and accessibility over the corresponding halide (goal a, d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:20 C:21",
+      "reactions": [
+        {
+          "forwardReaction": "Reductive amination with aldehyde",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 8,
+          "rationale": "Identified via Inter-Fragment Analysis (C) and Stereochemical Analysis (F). This disconnection attaches the tetrahydrooxazepine ring to the side-chain amine. It is a robust method (goal b) that crucially allows for the control of the stereocenter at C:20 by using a chiral aldehyde precursor (goal e)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:18 C:19",
+      "reactions": [
+        {
+          "forwardReaction": "Reductive amination with aldehyde",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 9,
+          "rationale": "Identified via Strategic Bond Analysis (D). Strategically installs the aminomethyl side chain onto the C2 position of the benzimidazole. This disconnection leads to a benzimidazole-2-carbaldehyde, a common and stable synthetic intermediate, simplifying the construction (goal a, c)."
+        },
+        {
+          "forwardReaction": "N-alkylation of secondary amines with alkyl halides",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 3,
+          "Priority": 10,
+          "rationale": "Identified via Strategic Bond Analysis (D). An alternative method to install the side chain at C2 of the benzimidazole. This requires a halomethyl-benzimidazole precursor, which may be less stable or require an extra synthetic step compared to the corresponding aldehyde (goal d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:19 N:20",
+      "reactions": [
+        {
+          "forwardReaction": "Reduction of secondary amides to amines",
+          "isInOntology": true,
+          "forwardReactionClass": "Reduction",
+          "Retrosynthesis Importance": 2,
+          "Priority": 11,
+          "rationale": "Identified via FGI Analysis (H). This functional group interconversion provides an alternative route to the secondary amine via an amide precursor. While a valid synthetic option, it introduces additional redox steps which may reduce overall efficiency (goal d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:18 C:19 N:20",
+      "reactions": [
+        {
+          "forwardReaction": "Reduction of nitrile to amine",
+          "isInOntology": true,
+          "forwardReactionClass": "Reduction",
+          "Retrosynthesis Importance": 2,
+          "Priority": 12,
+          "rationale": "Identified via FGI Analysis (H). This functional group interconversion strategy forms the aminomethyl group from a C2-nitrile on the benzimidazole. A nitrile is a stable handle that can be carried through several steps before reduction and subsequent alkylation to the final secondary amine (goal a)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:2 C:3",
+      "reactions": [
+        {
+          "forwardReaction": "N-alkylation of secondary amines with alkyl halides",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 2,
+          "Priority": 13,
+          "rationale": "Identified via Inter-Fragment Analysis (C). This disconnection removes the simple isobutyl group from the hydantoin core, leading to readily available starting materials (isobutyl halide). It is a standard and reliable bond formation (goal a, b)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:23 O:24",
+      "reactions": [
+        {
+          "forwardReaction": "Williamson Ether Synthesis",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 2,
+          "Priority": 14,
+          "rationale": "Identified via Intra-Fragment Analysis (E). This disconnection outlines a ring-closing strategy to form the tetrahydrooxazepine ring via intramolecular etherification. This approach simplifies the precursor to an acyclic amino-diol, where stereochemistry could be pre-installed (goal a, e)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:20",
+      "reactions": [
+        {
+          "forwardReaction": "Boc amine deprotection",
+          "isInOntology": true,
+          "forwardReactionClass": "Deprotection",
+          "Retrosynthesis Importance": 1,
+          "Priority": 15,
+          "rationale": "Identified via Protecting Group Analysis (I). This retrosynthetic step corresponds to the removal of a protecting group (e.g., Boc) from the secondary amine. Protection of N:19 would likely be required to prevent unwanted side reactions during sensitive steps like Suzuki coupling or N-alkylations."
+        }
+      ]
+    }
+  ]
+}

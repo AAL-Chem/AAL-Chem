@@ -1,0 +1,17 @@
+name: retro_llm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - rdkit
+  - pandas
+  - seaborn
+  - jupyter
+  - pip
+  - pip:
+    - google-generativeai
+    - dotenv
+    - weasyprint
+    - scikit-learn
+    - -e .

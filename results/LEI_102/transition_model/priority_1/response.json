@@ -1,0 +1,109 @@
+{
+  "product": "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](-[c:15]2[n:16][c:17]([CH2:18][NH:19][CH:20]3[CH2:21][CH2:22][O:23][CH2:24][CH2:25]3)[c:26]([F:27])[cH:28][cH:29]2)[cH:30][cH:31]1",
+  "reaction_analysis": [
+    {
+      "forward_reaction_name": "Suzuki coupling with boronic acids",
+      "reactant_permutations": [
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14]([*])[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": true,
+          "reasoning": "This is a general template for the Suzuki coupling. The `[*]` represents a halide or triflate leaving group, defining the class <CLASS:ArylHalideOrTriflate>. The roles of the two fragments (halide/triflate vs. boronic acid) can be reversed."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](I)[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a highly plausible reaction pair. Aryl iodides are excellent substrates for Suzuki couplings. Both reactants are stable and the reaction should be chemoselective, as the C-F bond on the boronic acid partner is unreactive under typical conditions."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](Br)[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a highly plausible reaction pair. Aryl bromides are very common and effective substrates for Suzuki couplings. Both reactants are stable and the reaction is expected to be chemoselective."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](OS(=O)(=O)C(F)(F)F)[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a plausible reaction pair. Aryl triflates are excellent coupling partners, comparable in reactivity to bromides. The reactants are stable and the reaction is expected to be highly selective."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](Cl)[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a plausible reaction pair with modern catalytic systems. While aryl chlorides are less reactive than bromides or iodides, numerous palladium catalysts with specialized phosphine ligands (e.g., Buchwald or Fu type ligands) can efficiently mediate this transformation."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](B(O)O)[cH:30][cH:31]1",
+            "I[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a highly plausible reaction pair with reversed roles. The aryl iodide is an excellent substrate. Reactants are stable and the C-F bond on the halide partner will not interfere, ensuring good chemoselectivity."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](B(O)O)[cH:30][cH:31]1",
+            "Br[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a highly plausible reaction pair with reversed roles. Aryl bromides are very effective substrates. Reactants are stable and the reaction is expected to be chemoselective."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](B(O)O)[cH:30][cH:31]1",
+            "O=S(=O)(O[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1)C(F)(F)F"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a plausible reaction pair with reversed roles. The aryl triflate is an excellent electrophile for the coupling. The reactants are stable and good chemoselectivity is expected."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](B(O)O)[cH:30][cH:31]1",
+            "Cl[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This is a plausible reaction pair with reversed roles, feasible with modern, highly active palladium catalysts designed for aryl chloride activation. Good chemoselectivity is expected."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](F)[cH:30][cH:31]1",
+            "OB(O)[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": false,
+          "is_template": false,
+          "reasoning": "This permutation is invalid. The oxidative addition of an unactivated aryl C-F bond to a palladium(0) complex is electronically disfavored and kinetically slow, making this transformation implausible under standard Suzuki conditions."
+        },
+        {
+          "reactants": [
+            "O=[C:1]1[N:2]([CH2:3][CH:4]([CH3:5])[CH3:6])[C:7](=[O:32])[CH2:8][N:9]1[CH2:10][c:11]1[cH:12][cH:13][c:14](B(O)O)[cH:30][cH:31]1",
+            "F[c:15]1[n:16][c:17]([CH2:18][NH:19][CH:20]2[CH2:21][CH2:22][O:23][CH2:24][CH2:25]2)[c:26]([F:27])[cH:28][cH:29]1"
+          ],
+          "is_valid": false,
+          "is_template": false,
+          "reasoning": "This permutation is invalid. In addition to the inherent difficulty of activating the C-F bond at the reaction center [c:15], the substrate also contains a second C-F bond at [c:26]. This would create an insurmountable chemoselectivity problem even if C-F activation were feasible."
+        }
+      ]
+    }
+  ]
+}

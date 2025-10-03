@@ -1,0 +1,73 @@
+{
+  "product": "O=[C:1]([c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1)[NH:26][CH2:27][CH:28]1[CH2:29][CH2:30]1",
+  "reaction_analysis": [
+    {
+      "forward_reaction_name": "Carboxylic acid to amide conversion",
+      "reactant_permutations": [
+        {
+          "reactants": [
+            "O=[C:1](*)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": true,
+          "is_template": true,
+          "reasoning": "This is the general template for amide formation. The wildcard [*] represents a leaving group on the acyl carbon, which is displaced by the amine nucleophile. This includes the carboxylic acid itself (which is activated in situ) or a pre-activated derivative. The class is <Class:ActivatedCarboxylicAcid>."
+        },
+        {
+          "reactants": [
+            "O=[C:1](O)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This permutation is the most chemically sound. The reaction between the carboxylic acid and the primary amine using modern peptide coupling reagents (e.g., HATU, EDC/HOBt) is the standard method for forming amides in complex molecules. This approach provides excellent chemoselectivity, favoring reaction with the target primary amine over the two secondary amines and the secondary alcohol present in the substrate. The mild conditions preserve the existing stereocenters."
+        },
+        {
+          "reactants": [
+            "CO[C:1](=O)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This option is plausible but suboptimal. The aminolysis of a simple methyl ester is a known reaction but typically requires forcing conditions, such as high heat, which could lead to side reactions or degradation of the complex starting material. While potentially more chemoselective than using an acyl halide, the reaction would likely be slow and inefficient compared to direct coupling of the carboxylic acid."
+        },
+        {
+          "reactants": [
+            "CCO[C:1](=O)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": true,
+          "is_template": false,
+          "reasoning": "This permutation is chemically plausible but inefficient for a complex substrate. Similar to the methyl ester, aminolysis of an ethyl ester generally requires harsh conditions to proceed at a reasonable rate. This poses a risk to the other functional groups and stereocenters in the molecule. Direct amide coupling from the carboxylic acid is the preferred industrial and laboratory method."
+        },
+        {
+          "reactants": [
+            "O=[C:1](Cl)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": false,
+          "is_template": false,
+          "reasoning": "This permutation is invalid due to extremely poor chemoselectivity. The acyl chloride is a highly reactive electrophile that would react indiscriminately with the multiple nucleophilic sites in the substrate, including the secondary alcohol ([OH:22]) and the two secondary amines ([N:5], [N:19]), in addition to the target primary amine. This would result in a complex and inseparable mixture of products."
+        },
+        {
+          "reactants": [
+            "O=[C:1](Br)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": false,
+          "is_template": false,
+          "reasoning": "This permutation is invalid. Similar to the acyl chloride, the acyl bromide is too reactive for a substrate with multiple nucleophilic functional groups. It would lead to a non-selective acylation of the alcohol and secondary amines, making it a synthetically unviable route."
+        },
+        {
+          "reactants": [
+            "O=[C:1](F)[c:2]1[n:3][c:4]([N:5]2[CH2:6][C@H:7]([c:8]3[cH:9][cH:10][cH:11][cH:12][cH:13]3)[CH2:14][CH2:15][CH2:16]2)[n:17][c:18]([N:19]2[CH2:20][C@@H:21]([OH:22])[CH2:23][CH2:24]2)[cH:25]1",
+            "[NH2:26][CH2:27][CH:28]1[CH2:29][CH2:30]1"
+          ],
+          "is_valid": false,
+          "is_template": false,
+          "reasoning": "This permutation is invalid. Although acyl fluorides are the least reactive of the acyl halides, they are still potent acylating agents. Their use on this substrate would present a significant and likely insurmountable challenge in achieving chemoselective reaction at the target primary amine over the other nucleophilic sites."
+        }
+      ]
+    }
+  ]
+}

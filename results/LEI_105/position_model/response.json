@@ -1,0 +1,101 @@
+{
+  "disconnections": [
+    {
+      "disconnection": "O:17 C:16 N:3 C:2",
+      "reactions": [
+        {
+          "forwardReaction": "oxadiazole",
+          "isInOntology": True,
+          "forwardReactionClass": "Aromatic Heterocycle Formation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 1,
+          "rationale": "Key ring-forming transformation (E, J) that constructs the oxadiazole part of the fused heterocyclic core. This disconnection significantly simplifies the molecular structure by breaking it down into a pyrimidine precursor (c). The forward reaction, a dehydrative cyclization of a diacylhydrazine derivative, is a standard and robust method for 1,3,4-oxadiazole synthesis (a, b)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:7 C:8",
+      "reactions": [
+        {
+          "forwardReaction": "Suzuki coupling with boronic acids",
+          "isInOntology": True,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 2,
+          "rationale": "Convergent disconnection (B, C) of the p-tolyl group from the heterocyclic core. The Suzuki reaction is robust, high-yielding, and tolerates a wide range of functional groups (b, d). This represents a key late-stage bond formation to build the final target (c). Starting materials (p-tolylboronic acid and a halogenated heterocycle) are readily accessible (a)."
+        },
+        {
+          "forwardReaction": "Stille reaction_aryl",
+          "isInOntology": True,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 3,
+          "rationale": "Convergent disconnection (B, C) of the p-tolyl group. The Stille coupling is a reliable alternative to Suzuki (b, c), though it involves toxic organotin reagents which is a drawback for practicality (d). Starting materials would be a halogenated heterocycle and a p-tolylstannane (a)."
+        },
+        {
+          "forwardReaction": "Negishi coupling",
+          "isInOntology": True,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 4,
+          "rationale": "Convergent C-C bond formation (B, C). Negishi coupling using an organozinc reagent offers high reactivity and functional group tolerance (b, c). The main drawback is the moisture sensitivity of the organozinc reagent (d). Connects the p-tolyl group to a halogenated core (a)."
+        },
+        {
+          "forwardReaction": "Kumada cross-coupling",
+          "isInOntology": True,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 3,
+          "Priority": 5,
+          "rationale": "A powerful C-C bond forming reaction (B, C) connecting a p-tolyl Grignard reagent with a halogenated heterocyclic core, catalyzed by Ni or Pd (b, c). Grignard reagents are highly reactive, which can be a challenge for functional group compatibility but offers excellent synthetic power (d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:1 C:2",
+      "reactions": [
+        {
+          "forwardReaction": "Friedel-Crafts acylation",
+          "isInOntology": True,
+          "forwardReactionClass": "Acylation",
+          "Retrosynthesis Importance": 3,
+          "Priority": 6,
+          "rationale": "Strategic bond analysis (D) suggests disconnecting the acyl group from the electron-rich oxadiazole ring. Friedel-Crafts acylation provides a direct route to install the ketone functionality (c). Requires 6-phenylhexanoyl chloride and a Lewis acid catalyst. Potential issues include regioselectivity if other positions on the core are reactive (d)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:1 C:18",
+      "reactions": [
+        {
+          "forwardReaction": "Ketone from Weinreb amide",
+          "isInOntology": True,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 2,
+          "Priority": 7,
+          "rationale": "Disconnects the alkyl chain from the carbonyl group (D). This strategy allows for the formation of the ketone from a stable Weinreb amide intermediate on the heterocyclic core via addition of a 5-phenylpentyl organometallic reagent (b, c). This method reliably avoids over-addition, a common side reaction with other carboxylic acid derivatives (d)."
+        },
+        {
+          "forwardReaction": "Grignard from nitrile to ketone",
+          "isInOntology": True,
+          "forwardReactionClass": "Functional Group Addition",
+          "Retrosynthesis Importance": 2,
+          "Priority": 8,
+          "rationale": "An alternative disconnection of the alkyl chain from the carbonyl (D). A nitrile on the heterocyclic core can be reacted with a 5-phenylpentyl Grignard reagent, followed by hydrolysis, to yield the target ketone (c). This is a classical and robust transformation (b), simplifying the target to two common synthons (a)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:1 O:1",
+      "reactions": [
+        {
+          "forwardReaction": "Oxidation or Dehydrogenation of Alcohols to Aldehydes and Ketones",
+          "isInOntology": True,
+          "forwardReactionClass": "Oxidation",
+          "Retrosynthesis Importance": 2,
+          "Priority": 9,
+          "rationale": "A standard functional group interconversion (FGI) (H) where the ketone is derived from the corresponding secondary alcohol. The forward oxidation is typically high-yielding and reliable with many available reagents (e.g., PCC, Swern, DMP) (b). This adds a step but can be useful if the alcohol is easier to synthesize or handle (a). No stereochemistry to control here (e)."
+        }
+      ]
+    }
+  ]
+}

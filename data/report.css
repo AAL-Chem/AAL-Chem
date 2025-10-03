@@ -1,0 +1,271 @@
+/*
+ * Modern & Elegant CSS Stylesheet for Markdown
+ * Optimized for readability and professional appearance
+ */
+
+/* --- Overall Page and Font Setup --- */
+@page {
+    size: A4;
+    margin: 2cm 1.5cm;
+}
+
+:root {
+    --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+    --heading-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+    --code-font: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Courier New", monospace;
+    
+    --text-color: #2d3748;
+    --text-light: #4a5568;
+    --heading-color: #1a202c;
+    --link-color: #3182ce;
+    --link-hover: #2c5282;
+    --border-color: #e2e8f0;
+    --border-light: #f7fafc;
+    --code-bg: #f8f9fa;
+    --code-border: #e9ecef;
+    --accent-color: #667eea;
+    --success-color: #48bb78;
+    --warning-color: #ed8936;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 10pt;
+    line-height: 1.7;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Typography Scale --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-weight: 700;
+    margin: 2em 0 0.8em 0;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-size: 2.25rem;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.875rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.375rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* --- Paragraphs and Text --- */
+p {
+    margin: 0 0 1.2em 0;
+}
+
+strong, b {
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+em, i {
+    font-style: italic;
+    color: var(--text-light);
+}
+
+/* --- Code Styling --- */
+pre {
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+code {
+    font-family: var(--code-font);
+    font-size: 0.85em;
+    background: var(--code-bg);
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    border: 1px solid var(--code-border);
+    font-weight: 500;
+}
+
+pre > code {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+/* --- Links --- */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+/* --- Blockquotes --- */
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    background: var(--border-light);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--text-light);
+    position: relative;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--accent-color);
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+    font-family: serif;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Lists --- */
+ul, ol {
+    padding-left: 1.75rem;
+    margin: 1rem 0;
+}
+
+li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+ul > li::marker {
+    color: var(--accent-color);
+}
+
+ol > li::marker {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* --- Tables --- */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background: var(--border-light);
+}
+
+/* --- Horizontal Rules --- */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-color), transparent);
+    margin: 2rem 0;
+    border-radius: 1px;
+}
+
+/* --- Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Task Lists --- */
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+    accent-color: var(--accent-color);
+}
+
+/* --- Print Optimizations --- */
+@media print {
+    body {
+        font-size: 9pt;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+}

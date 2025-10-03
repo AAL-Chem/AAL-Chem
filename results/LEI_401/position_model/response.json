@@ -1,0 +1,142 @@
+{
+  "disconnections": [
+    {
+      "disconnection": "C:1 N:26",
+      "reactions": [
+        {
+          "forwardReaction": "Carboxylic acid to amide conversion",
+          "isInOntology": true,
+          "forwardReactionClass": "Acylation",
+          "Retrosynthesis Importance": 3,
+          "Priority": 3,
+          "rationale": "Identified via Strategic Bond Analysis (D), this amide bond disconnection is a classic, high-importance step. The forward reaction is a robust and high-yielding amide coupling, simplifying the molecule to a carboxylic acid precursor and commercially available cyclopropylmethylamine (goals a, b). The secondary amines on the piperidine rings are significantly less nucleophilic, so chemoselectivity should be high."
+        },
+        {
+          "forwardReaction": "Acylation of Nitrogen Nucleophiles by Acyl/Thioacyl/Carbamoyl Halides and Analogs_N",
+          "isInOntology": true,
+          "forwardReactionClass": "Acylation",
+          "Retrosynthesis Importance": 3,
+          "Priority": 4,
+          "rationale": "Identified via Strategic Bond Analysis (D), this is an alternative high-importance disconnection for the amide bond via a more reactive acyl chloride. This reaction is often very fast and high-yielding (goal b), though it requires an extra step to prepare the acyl chloride from the acid. Chemoselectivity is generally excellent."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:4 N:5",
+      "reactions": [
+        {
+          "forwardReaction": "Buchwald-Hartwig/Ullmann-Goldberg/N-arylation secondary amine",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 1,
+          "rationale": "Identified from Inter-Fragment Analysis (C), this is a very high importance disconnection that convergently couples the phenylpiperidine fragment to the central imidazole core. This modern cross-coupling reaction is robust and strategically sound for scaffold construction (goal c). The synthesis would require a di-halogenated imidazole, and chemoselectivity between the two coupling sites would need to be controlled, possibly via differential reactivity of the halides (e.g., Br vs. I)."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:18 N:19",
+      "reactions": [
+        {
+          "forwardReaction": "Buchwald-Hartwig/Ullmann-Goldberg/N-arylation secondary amine",
+          "isInOntology": true,
+          "forwardReactionClass": "Heteroatom Alkylation and Arylation",
+          "Retrosynthesis Importance": 4,
+          "Priority": 2,
+          "rationale": "Identified from Inter-Fragment Analysis (C), this is a key convergent disconnection of the hydroxypiperidine fragment. A C-N cross-coupling is a powerful method for building the core scaffold (goal c). The free hydroxyl group on the piperidine fragment might require protection to prevent interference with the palladium catalyst, a potential chemoselectivity issue."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:21 O:22",
+      "reactions": [
+        {
+          "forwardReaction": "Reduction of ketone to secondary alcohol",
+          "isInOntology": true,
+          "forwardReactionClass": "Reduction",
+          "Retrosynthesis Importance": 3,
+          "Priority": 5,
+          "rationale": "Identified from Stereochemical Analysis (F) and FGI Analysis (H), this disconnection allows for the creation of the C21 stereocenter. The forward asymmetric reduction of a ketone precursor is a powerful strategy for stereochemical control (goal e) and is a robust reaction (goal b). This approach offers excellent control over the final product's stereochemistry."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:5 C:6 C:7 C:14 C:15 C:16",
+      "reactions": [
+        {
+          "forwardReaction": "Arene hydrogenation",
+          "isInOntology": true,
+          "forwardReactionClass": "Reduction",
+          "Retrosynthesis Importance": 2,
+          "Priority": 7,
+          "rationale": "Identified via FGI Analysis (H.i), this disconnection simplifies the 3-phenylpiperidine starting material to 3-phenylpyridine. The forward hydrogenation of a pyridine derivative is a common way to access piperidines (goal a). Asymmetric hydrogenation conditions could potentially be employed to set the C7 stereocenter (goal e)."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:19 C:20 C:21 C:23 C:24",
+      "reactions": [
+        {
+          "forwardReaction": "Arene hydrogenation",
+          "isInOntology": true,
+          "forwardReactionClass": "Reduction",
+          "Retrosynthesis Importance": 2,
+          "Priority": 8,
+          "rationale": "Identified via FGI Analysis (H.i), this disconnection simplifies the 3-hydroxypiperidine fragment to 3-hydroxypyridine. While this simplifies the starting material (goal a), controlling the subsequent reduction of the ketone (formed from the hydroxyl) and setting the stereocenter would be a separate, critical step."
+        }
+      ]
+    },
+    {
+      "disconnection": "C:7 C:8",
+      "reactions": [
+        {
+          "forwardReaction": "Suzuki coupling with boronic acids",
+          "isInOntology": true,
+          "forwardReactionClass": "C-C Coupling",
+          "Retrosynthesis Importance": 2,
+          "Priority": 6,
+          "rationale": "Identified via Strategic Bond Analysis (D), this C-C bond disconnection breaks down a key fragment. However, since chiral 3-phenylpiperidine is accessible, this is less strategic than connecting the whole fragment to the core. A Suzuki coupling would be a reliable method (goal b) but adds steps compared to using the intact piperidine."
+        }
+      ]
+    },
+    {
+      "disconnection": "O:22",
+      "reactions": [
+        {
+          "forwardReaction": "Alcohol deprotection from silyl ethers",
+          "isInOntology": true,
+          "forwardReactionClass": "Deprotection",
+          "Retrosynthesis Importance": 1,
+          "Priority": 9,
+          "rationale": "Identified from Protecting Group Analysis (I), this represents a tactical deprotection step. The alcohol would likely need to be protected as a silyl ether during steps involving strong bases or organometallic reagents to avoid side reactions. This step addresses chemoselectivity but is of lower strategic importance."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:5",
+      "reactions": [
+        {
+          "forwardReaction": "Boc amine deprotection",
+          "isInOntology": true,
+          "forwardReactionClass": "Deprotection",
+          "Retrosynthesis Importance": 1,
+          "Priority": 10,
+          "rationale": "Identified from Protecting Group Analysis (I), this is a tactical deprotection. The secondary amine of the piperidine may require Boc protection to prevent it from interfering in other reactions, such as the second C-N coupling. This step manages chemoselectivity and is of lower strategic importance."
+        }
+      ]
+    },
+    {
+      "disconnection": "N:19",
+      "reactions": [
+        {
+          "forwardReaction": "Boc amine deprotection",
+          "isInOntology": true,
+          "forwardReactionClass": "Deprotection",
+          "Retrosynthesis Importance": 1,
+          "Priority": 11,
+          "rationale": "Identified from Protecting Group Analysis (I), this is another tactical deprotection step. Protecting this secondary amine could be crucial for achieving selectivity during a stepwise C-N coupling sequence on the imidazole core. It is a key step for controlling chemoselectivity."
+        }
+      ]
+    }
+  ]
+}
